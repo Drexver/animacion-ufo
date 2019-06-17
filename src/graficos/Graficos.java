@@ -33,9 +33,9 @@ public class Graficos extends Application {
     public void start(Stage stage) throws Exception {
       
     Pane panel = new Pane();
-    Canvas tablero = new Canvas( 700,300);
+    Canvas tablero = new Canvas( 1024,512);
     panel.getChildren().add(tablero);
-    Scene escena= new Scene(panel, 700, 300, Color.YELLOWGREEN);
+    Scene escena= new Scene(panel, 1024, 512, Color.YELLOWGREEN);
     GraphicsContext lapiz = tablero.getGraphicsContext2D();
     stage.setScene(escena);
     stage.setTitle("Navegando en mi automovil y hablando con la nena por el movil...");
